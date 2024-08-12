@@ -28,7 +28,7 @@ func (apiCfg *apiConfig) handlerCreateFeed(w http.ResponseWriter, r *http.Reques
 		UpdatedAt: time.Now().UTC(),
 		Name:      params.Name,
 		Url:       params.URL,
-		UserID:    user.ID,
+		//UserID:    user.ID,
 	})
 	if err != nil {
 		responseWithError(w, 400, fmt.Sprintf("Couldn't create feed: %v", err))
